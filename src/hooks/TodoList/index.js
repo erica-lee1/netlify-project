@@ -15,7 +15,7 @@ function TodoList() {
         <input onChange={handleChange} value={currentTodo} />
         <button onClick={addTodo}>Add Todo</button>
         <ul>
-            {todos.map(item => <li key={Math.random()}>{item}</li>)}
+            {todos.map(setTodos => <li key={Math.random()}>{setTodos}</li>)}
         </ul>
     </div>
 }
